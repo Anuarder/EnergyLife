@@ -1,9 +1,22 @@
 .ems-contacts {
-  padding: 7rem 0;
-  background-image: url('../images/contacts/map.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+.flexible {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.flexible-image {
+  max-width: 40%;
+}
+.mymap-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  /* z-index: 9; */
 }
 
 .ems-contacts__container {
@@ -58,11 +71,18 @@
   font-weight: 400;
 }
 
+@media (max-width: 1100px) {
+  .flexible-image {
+    max-width: 30%;
+  }
+}
+@media (max-width: 410px) {
+  .flexible-image {
+    display: none;
+  }
+}
 
 @media (max-width: 767px) { 
-  .ems-contacts {
-    padding: 4rem 0;
-  }
   .ems-contacts__content {
     width: 100%;
   }

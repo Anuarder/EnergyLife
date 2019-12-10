@@ -273,16 +273,16 @@
               </div>
             </div> 
             <div class="wow fadeIn ems-plus__girl-content ems-plus__girl-content5">
-              <button @click="showGirlText(5)">
-                <span v-if="girl_button === 5">-</span>
-                <span v-else>+</span>
-              </button>
-              <div 
-                v-show="girl_button === 5"
-                class="ems-plus__girl-text">
-                Укрепление поясничного отдела
+                <button @click="showGirlText(5)">
+                  <span v-if="girl_button === 5">-</span>
+                  <span v-else>+</span>
+                </button>
+                <div 
+                  v-show="girl_button === 5"
+                  class="ems-plus__girl-text">
+                  Жиросжигание
+                </div>
               </div>
-            </div>
             <div class="wow fadeIn ems-plus__girl-content ems-plus__girl-content6">
               <button @click="showGirlText(6)">
                 <span v-if="girl_button === 6">-</span>
@@ -291,7 +291,7 @@
               <div 
                 v-show="girl_button === 6"
                 class="ems-plus__girl-text">
-                Жиросжигание
+                Укрепление поясничного отдела
               </div>
             </div>
           </div>
@@ -303,31 +303,31 @@
               <div class="wow fadeInUp ems-plus__list-item"  data-wow-delay=".2s">
                 <img src="/images/plus/list1.svg" alt="list1">
                 <p>
-                  Мы работаем с <b>оборудованием</b> 
-                  от <b>мирового лидера</b> 
-                  рынка EMS - MIHA BODYTEC
+                  Предлагаем <b>лучшее соотношение</b> стоимости
+                  абониментов, <b>результата и персонализации</b>  на рынке
+                  EMS в РК
                 </p>
               </div>
               <div class="wow fadeInUp ems-plus__list-item" data-wow-delay=".4s">
                 <img src="/images/plus/list2.svg" alt="list1">
                 <p>
-                  Energy Life - единственная студия в 
-                  РК с <b>сертификатом международного стандарта EMS</b> 
-                  выданным Международной Академией спорта в Германии
+                  Проводим <b>ежегодное обучение</b> ТОП-менеджмента и 
+                  тренерского состава Energy Life в Германии
                 </p>
               </div>
               <div class="wow fadeInUp ems-plus__list-item" data-wow-delay=".6s">
                 <img src="/images/plus/list3.svg" alt="list1">
                 <p>
-                  У нас лучшее соотношение <b>стоимости абонементов</b> 
-                  качества и сервиса на рынке абонемент на рынке в Алматы 
+                  Мы работаем на оборудовании от мирового лидера
+                  рынка EMS - <b>MIHA BODYTECH (Германия)</b>
                 </p>
               </div>
               <div class="wow fadeInUp ems-plus__list-item" data-wow-delay=".8s">
                 <img src="/images/plus/list4.svg" alt="list1">
                 <p>
-                  <b>Индивидуальные</b> раздевалки, душевые 
-                  кабинки и душевые принадлежности, фен, шкафчики 
+                  Energy Life - <b>единственная сеть EMS</b> - студий в РК
+                  обладающая сертификатов <b> международного образца </b>,
+                  выданного в Германии разработчиками технологии и оборудования
                 </p>
               </div>
             </div>
@@ -1005,32 +1005,39 @@
         </div>
       </div>
       <div class="ems-contacts" id="contacts">
-        <div class="wow jackInTheBox ems-contacts__container container">
-          <div class="ems-contacts__content">
-            <h1>Контакты:</h1>
-            <h2 class="colored">Адрес:</h2>
-            <p>
-              ЖК Самал Де Люкс
-              Достык проспект, 97, 1 этаж
-              (Самал 2, Медеуский район, Алматы)
-            </p>
-            <a href="https://yandex.kz/maps/-/CGT3aSjv" target="blank">Показать на карте</a>
-            <p>
-              Жамакаева, 254/2 блок Д2
-              (Горный Гигант, Медеуский район, Алматы, 050044)
-            </p>
-            <a href="https://yandex.kz/maps/-/CGT3aLKS" target="blank">Показать на карте</a>
-            <div class="ems-contacts__items">
-              <div class="ems-contacts__item">
-                <h2 class="colored">Телефон:</h2>
-                <a href="tel:+7 (775) 232 44 88">+7 (775) 232 44 88</a>
-              </div> 
-              <div class="ems-contacts__item">
-                <h2 class="colored">Почта:</h2>
-                <a href="mailto:energy.life.forever@gmail.com">energy.life.forever@gmail.com</a>
+        <div id="mymap"></div>
+        <div class="mymap-container">
+            <div class="wow jackInTheBox ems-contacts__container container">
+                <div class="ems-contacts__content">
+                  <div class="flexible">
+                    <div>
+                      <h1>Контакты:</h1>
+                      <h2 class="colored">Адрес:</h2>
+                      <p>
+                        Достык 97, ЖК Самал Де Люкс 
+                      </p>
+                      <a href="https://yandex.kz/maps/-/CGT3aSjv" target="blank">Показать на карте</a>
+                      <p>
+                        Жамакаева, 254/2 блок Д2
+                      </p>
+                      <a href="https://yandex.kz/maps/-/CGT3aLKS" target="blank">Показать на карте</a>
+                    </div>
+                    <div class="flexible-image">
+                      <img src="/images/franchise/f2.png" alt="">
+                    </div>
+                  </div>
+                  <div class="ems-contacts__items">
+                    <div class="ems-contacts__item">
+                      <h2 class="colored">Телефон:</h2>
+                      <a href="tel:+7 (775) 232 44 88">+7 (775) 232 44 88</a>
+                    </div> 
+                    <div class="ems-contacts__item">
+                      <h2 class="colored">Почта:</h2>
+                      <a href="mailto:energy.life.forever@gmail.com">energy.life.forever@gmail.com</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
         </div>
       </div>
     </main>
@@ -1067,6 +1074,7 @@
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <script src="https://cdn.jsdelivr.net/npm/v-mask/dist/v-mask.min.js"></script>
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A87093f357b699b525c0dcb8a1c6e05d7bc6c979c7658689f4db5d49ce257192b&amp;width=100%25&amp;height=600&amp;id=mymap&amp;lang=ru_RU&amp;scroll=true"></script>
   <script src="/js/app.js"></script>
 </body>
 </html>

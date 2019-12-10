@@ -1,6 +1,9 @@
 body {
   overflow-x: hidden;
+  color: #0f1e58;
 }
+
+
 
 .page-wrapper {
   position: relative;

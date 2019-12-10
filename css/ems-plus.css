@@ -44,35 +44,38 @@
 
 
 .ems-plus__girl-content1 {
-  top: 8%;
+  /* Тонус и рельеф мышц  */
+  top: 27%;
   left: 17%;
 }
 
 .ems-plus__girl-content2 {
-  top: 25%;
+  /*  Антивозрастной эффект */
+  top: 22%;
   right: 37%;
 }
 
 .ems-plus__girl-content3 {
-  top: 75%;
-  right: 34%;
+  /* Уменьшение целлюлита  */
+  top: 77%;
+  left: 33%;
 }
 .ems-plus__girl-content4 {
-  top: 55%;
+  /* Уменьшение боли в спине */
+  top: 60%;
   right: 35%;
 }
 .ems-plus__girl-content5 {
-  top: 65%;
-  left: 20%;
+  /* Жиросжигание */
+  top: 83%;
+  right: 30%;
 }
 .ems-plus__girl-content6 {
-  top: 50%;
-  left: 25%;
+  /* Укрепление поясничного отдела */
+  top: 55%;
+  left: 33%;
 }
-.ems-plus__girl-content7 {
-  top: 35%;
-  left: 20%;
-}
+
 
 .ems-plus__girl-text {
   position: absolute;
