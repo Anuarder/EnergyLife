@@ -1,0 +1,180 @@
+.ems-plus {
+  padding: 7rem 0;
+}
+
+.ems-plus__container {
+  display: flex;
+  justify-content: space-between;
+
+  height: 600px;
+}
+
+.ems-plus__girl {
+  position: relative;
+  width: 55%;
+  margin-right: 2rem;
+
+  background-image: url('../images/plus/girl.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ems-plus__girl-content {
+  position: absolute;
+}
+
+
+.ems-plus__girl-content button {
+  outline: none;
+  position: absolute;
+  z-index: 1;
+
+  border: none;
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+
+  font-size: 1.5rem;
+
+  color: #fff;
+  background: var(--orange-gradient);
+  box-shadow: 0px 0px 15px -5px var(--orange);
+}
+
+
+.ems-plus__girl-content1 {
+  top: 8%;
+  left: 17%;
+}
+
+.ems-plus__girl-content2 {
+  top: 25%;
+  right: 37%;
+}
+
+.ems-plus__girl-content3 {
+  top: 75%;
+  right: 34%;
+}
+.ems-plus__girl-content4 {
+  top: 55%;
+  right: 35%;
+}
+.ems-plus__girl-content5 {
+  top: 65%;
+  left: 20%;
+}
+.ems-plus__girl-content6 {
+  top: 50%;
+  left: 25%;
+}
+.ems-plus__girl-content7 {
+  top: 35%;
+  left: 20%;
+}
+
+.ems-plus__girl-text {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  padding: 1rem;
+  width: 230px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+
+.ems-plus__content {
+  width: 50%;
+}
+
+.ems-plus__content h1 {
+  font-size: 2rem;
+}
+
+.ems-plus__content a {
+  margin-top: 3rem;
+  margin-left: 60px;
+}
+
+.ems-plus__content button:hover,
+.ems-plus__girl-content button:hover {
+  cursor: pointer;
+  transition: .2s;
+  box-shadow: 0px 0px 20px -5px var(--orange);
+}
+
+.ems-plus__list {
+  margin-top: 3rem;
+}
+
+.ems-plus__list-item {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+
+  font-size: 1.1rem;
+  line-height: 160%;
+}
+
+.ems-plus__list-item:hover img {
+  border-radius: 100%;
+  box-shadow: 0px 0px 30px -5px var(--orange);
+}
+
+.ems-plus__list-item img {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+
+@media (max-width: 1320px) {
+  .ems-plus__list-item img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .ems-plus__list-item img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ems-plus {
+    padding: 4rem 0;
+  }
+  
+  .ems-plus__girl {
+    display: none;
+  }
+  
+  .ems-plus__container {
+    justify-content: center;
+    height: auto;
+  }
+
+  .ems-plus__list-item {
+    margin-top: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .ems-plus__content a {
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  .ems-plus__content {
+    background-image: url('../images/plus/girl_opacity.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .ems-plus__content {
+    width: 100%;
+  }
+}

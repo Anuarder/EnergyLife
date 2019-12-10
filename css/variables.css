@@ -1,0 +1,48 @@
+:root {
+  --orange: #F26725;
+  --orange-gradient: linear-gradient(180deg, #FF8500 0%, #F26725 100%);
+}
+.colored {
+  color: var(--orange);
+}
+a {
+  cursor: pointer;
+}
+.link-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 60px;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 5px;
+  
+  color: #fff;
+  background: var(--orange-gradient);
+}
+
+.link-button:hover {
+  transition: .3s;
+  box-shadow: 0px 0px 30px -5px var(--orange);
+}
+
+
+@media (max-width: 1320px) {
+  .link-button {
+    width: 250px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .link-button {
+    width: 200px;
+    height: 40px;
+  }
+}

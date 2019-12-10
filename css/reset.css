@@ -1,0 +1,46 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  color: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* html {
+  font-size: 14px;
+} */
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+
+.modal-open {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button,
+a,
+input,
+select,
+label {
+  font-family: inherit;
+}

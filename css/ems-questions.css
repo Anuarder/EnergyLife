@@ -1,0 +1,135 @@
+.ems-questions {
+  padding: 7rem 0;
+}
+
+.ems-questions h1 {
+  font-size: 2rem;
+}
+
+.ems-questions__content {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 5px;
+  row-gap: 2rem;
+}
+
+.ems-questions__card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  height: 350px;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #fff;
+  position: relative;
+  box-shadow: inset 0px -78px 93px -11px rgba(0,0,0,0.75);
+}
+
+.ems-questions__card h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: .6rem;
+}
+
+.ems-questions__card hr {
+  margin-top: .6rem;
+  border: none;
+  height: 2px;
+  width: 40%;
+  background: var(--orange);
+}
+
+.ems-questions__link {
+  margin-top: 1.5rem;
+  display: flex;
+  font-weight: 500;
+  justify-content: flex-end;
+}
+
+.ems-questions__link a {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.ems-questions__link img {
+  margin-left: 5px;
+}
+
+.ems-questions__card:hover .ems-questions__text {
+  transition: .2s;
+  opacity: 1;
+}
+
+.ems-questions__text {
+  opacity: 0;
+  position: absolute;
+  background: var(--orange);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+}
+
+.ems-questions__text h1 {
+  font-size: .9rem;
+  line-height: 150%;
+}
+
+.ems-questions__text p {
+  margin-top: 1rem;
+  font-size: .8rem;
+  line-height: 150%;
+}
+
+
+@media (max-width: 1320px) {
+  .ems-questions__card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .ems-questions__card {
+    height: 250px;
+  }
+}
+
+@media (max-width: 840px) { 
+  .ems-questions__content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) { 
+  .ems-questions {
+    padding: 4rem 0;
+  }
+  .ems-questions__content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  .ems-questions__text h1 {
+    font-size: 1.1rem;
+  }
+  
+  .ems-questions__text p {
+    font-size: 1rem;
+  } 
+}
+
+@media (max-width: 650px) {
+  .ems-questions__content {
+    grid-template-columns: 1fr;
+  }
+  .ems-questions__card {
+    background-position: top;
+  }
+}

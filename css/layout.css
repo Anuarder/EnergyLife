@@ -1,0 +1,107 @@
+body {
+  overflow-x: hidden;
+}
+
+.page-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+
+.shape {
+  position: absolute;
+  z-index: 5;
+  width: 250px;
+}
+
+.triangle1 {
+  bottom: 89%;
+}
+
+.triangle2 {
+  bottom: 57%;
+  right: 0;
+}
+
+.triangle3 {
+  bottom: 42%;
+  right: 0;
+}
+
+.circle {
+  bottom: 30%;
+}
+
+.triangle4 {
+  bottom: 15%;
+}
+
+.in-mobile {
+  display: none !important;
+}
+
+
+
+@media (max-width: 1470px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 1000px;
+  }
+  .shape {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1320px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 1250px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 800px;
+  }
+  .shape {
+    width: 170px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .shape {
+    display: none;
+  }
+  .container {
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .in-mobile {
+    display: block !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

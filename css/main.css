@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&display=swap&subset=cyrillic');
+
+@import "./variables.css";
+@import "./reset.css";
+
+@import "./layout.css";
+
+@import "./header.css";
+@import "./result-counter.css";
+@import "./ems-about.css";
+@import "./ems-plus.css";
+@import "./ems-types.css";
+@import "./ems-test.css";
+@import "./ems-reviews.css";
+@import "./ems-food.css";
+@import "./ems-questions.css";
+@import "./ems-franchise.css";
+@import "./ems-contacts.css";
+@import "./footer.css";
+@import "./sidebar.css";
+@import "./dialog.css";

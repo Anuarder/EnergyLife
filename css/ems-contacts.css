@@ -1,0 +1,69 @@
+.ems-contacts {
+  padding: 7rem 0;
+  background-image: url('../images/contacts/map.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ems-contacts__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ems-contacts__content {
+  background: linear-gradient(198.93deg, #394D99 11%, #7CD8EA 207.29%);
+  padding: 2rem;
+  color: #fff;
+  width: 70%;
+}
+
+.ems-contacts__content h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.ems-contacts__content h2 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+.ems-contacts__content p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 150%;
+}
+
+.ems-contacts__content a {
+  display: block;
+  font-size: 1.1rem;
+  margin-top: .5rem;
+  color: rgba(255, 255, 255, 0.431);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.ems-contacts__items {
+  display: flex;
+}
+
+.ems-contacts__item:nth-child(2) {
+  margin-left: 5rem;
+}
+
+.ems-contacts__item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+
+@media (max-width: 767px) { 
+  .ems-contacts {
+    padding: 4rem 0;
+  }
+  .ems-contacts__content {
+    width: 100%;
+  }
+}
