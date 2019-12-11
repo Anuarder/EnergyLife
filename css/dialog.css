@@ -33,7 +33,7 @@
   border-radius: 1rem;
 }
 
-.dialog-container, 
+.dialog-container,
 .dialog-form {
   display: flex;
   flex-direction: column;

@@ -7,6 +7,12 @@
   font-size: 1.4rem;
 }
 
+.ems-reviews h2 {
+  margin-top: .6rem;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
 .ems-reviews p {
   margin-top: 1rem;
   font-size: 1.2rem;
@@ -47,10 +53,10 @@
 
 .review-text-1,
 .review-text-2,
-.review-text-3, 
-.review-text-4, 
-.review-text-5, 
-.review-text-6, 
+.review-text-3,
+.review-text-4,
+.review-text-5,
+.review-text-6,
 .review-text-7 {
   display: none;
 }

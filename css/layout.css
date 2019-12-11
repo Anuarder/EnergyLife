@@ -56,9 +56,11 @@ body {
   html {
     font-size: 14px;
   }
+
   .container {
     max-width: 1000px;
   }
+
   .shape {
     width: 200px;
   }
@@ -68,6 +70,7 @@ body {
   html {
     font-size: 12px;
   }
+
   .container {
     max-width: 900px;
   }
@@ -77,9 +80,11 @@ body {
   html {
     font-size: 10px;
   }
+
   .container {
     max-width: 800px;
   }
+
   .shape {
     width: 170px;
   }
@@ -89,6 +94,7 @@ body {
   .shape {
     display: none;
   }
+
   .container {
     max-width: 100%;
     padding-left: 30px;

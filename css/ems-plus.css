@@ -60,16 +60,19 @@
   top: 77%;
   left: 33%;
 }
+
 .ems-plus__girl-content4 {
   /* Уменьшение боли в спине */
   top: 60%;
   right: 35%;
 }
+
 .ems-plus__girl-content5 {
   /* Жиросжигание */
   top: 83%;
   right: 30%;
 }
+
 .ems-plus__girl-content6 {
   /* Укрепление поясничного отдела */
   top: 55%;
@@ -148,11 +151,11 @@
   .ems-plus {
     padding: 4rem 0;
   }
-  
+
   .ems-plus__girl {
     display: none;
   }
-  
+
   .ems-plus__container {
     justify-content: center;
     height: auto;
@@ -167,6 +170,7 @@
     margin: 0 auto;
     margin-top: 3rem;
   }
+
   .ems-plus__content {
     background-image: url('../images/plus/girl_opacity.png');
     background-size: contain;

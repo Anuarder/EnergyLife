@@ -11,7 +11,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .ems-test h1 {
@@ -72,11 +72,13 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
   .ems-test__text img {
     margin: 3rem 0;
     display: flex;
     transform: rotate(90deg);
   }
+
   .ems-test h1 br {
     display: none;
   }

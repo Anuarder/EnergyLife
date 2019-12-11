@@ -26,7 +26,7 @@
   justify-content: flex-end;
   color: #fff;
   position: relative;
-  box-shadow: inset 0px -78px 93px -11px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -78px 93px -11px rgba(0, 0, 0, 0.75);
 }
 
 .ems-questions__card h2 {
@@ -101,34 +101,37 @@
   }
 }
 
-@media (max-width: 840px) { 
+@media (max-width: 840px) {
   .ems-questions__content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 767px) { 
+@media (max-width: 767px) {
   .ems-questions {
     padding: 4rem 0;
   }
+
   .ems-questions__content {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1rem;
     row-gap: 1rem;
   }
+
   .ems-questions__text h1 {
     font-size: 1.1rem;
   }
-  
+
   .ems-questions__text p {
     font-size: 1rem;
-  } 
+  }
 }
 
 @media (max-width: 650px) {
   .ems-questions__content {
     grid-template-columns: 1fr;
   }
+
   .ems-questions__card {
     background-position: top;
   }

@@ -2,12 +2,15 @@
   --orange: #F26725;
   --orange-gradient: linear-gradient(180deg, #FF8500 0%, #F26725 100%);
 }
+
 .colored {
   color: var(--orange);
 }
+
 a {
   cursor: pointer;
 }
+
 .link-button {
   cursor: pointer;
   display: flex;
@@ -22,7 +25,7 @@ a {
 
   border: none;
   border-radius: 5px;
-  
+
   color: #fff;
   background: var(--orange-gradient);
 }

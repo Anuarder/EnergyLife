@@ -8,8 +8,17 @@ $(document).ready(function () {
   franchiseSlider();
   anchor();
   dialog1();
+  flexibleSlider();
 })
 
+function flexibleSlider() {
+  const headerSwiper = new Swiper('.flexible-slider', {
+    loop: true,
+    autoplay: {
+      delay: 3000
+    }
+  })
+}
 
 function headerSlider() {
   const headerSwiper = new Swiper('.header__slider', {
@@ -115,7 +124,7 @@ function franchiseSlider() {
 
 function dialogClose() {
   const dialog = document.getElementsByClassName("dialog")
-  for(let item of dialog) {
+  for (let item of dialog) {
     item.style.display = 'none'
   }
 }
