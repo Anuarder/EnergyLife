@@ -13,7 +13,7 @@
   position: relative;
   width: 55%;
   margin-right: 2rem;
-
+  transform: rotate(10deg);
   background-image: url('../images/plus/girl.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -21,6 +21,7 @@
 
 .ems-plus__girl-content {
   position: absolute;
+  transform: rotate(-10deg);
 }
 
 
