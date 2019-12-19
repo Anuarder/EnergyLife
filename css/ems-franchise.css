@@ -9,6 +9,12 @@
   font-weight: bold;
 }
 
+.link-video-container {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
 .ems-franchise__container h1 {
   font-size: 2rem;
 }
@@ -46,6 +52,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.ems-franchise__left {
+  margin-left: 5px;
+}
+
+.ems-franchise__right {
+  margin-right: 5px;
 }
 
 .ems-franchise__actions .swiper-pagination-bullet {

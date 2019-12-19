@@ -63,7 +63,7 @@
 
 .header__text {
   margin-top: 1rem;
-  line-height: 150%;
+  line-height: 180%;
   font-size: 1.1rem;
 }
 
@@ -88,6 +88,12 @@
 .header__form-container {
   display: flex;
   justify-content: flex-end;
+}
+
+.slider-arrow:hover {
+  cursor: pointer;
+  transition: .3s;
+  transform: scale(1.1);
 }
 
 .header__form {
@@ -179,7 +185,6 @@
 
 
 @media (max-width: 1470px) {
-
   .header__form input,
   .header__form button {
     height: 45px;
