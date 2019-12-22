@@ -3,7 +3,26 @@ body {
   color: #0f1e58;
 }
 
+.top-button {
+  position: fixed;
+  bottom: 30%;
+  right: 20px;
+  z-index: 9;
+  color: black;
+  font-weight: 500;
+}
 
+.top-button img {
+  margin-right: 1rem;
+  transform: rotate(90deg);
+}
+.top-button-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transform: rotate(-90deg);
+
+}
 
 .page-wrapper {
   position: relative;
