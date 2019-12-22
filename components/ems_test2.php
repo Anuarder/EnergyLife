@@ -1,16 +1,14 @@
-<div class="ems-test ems-test2">
+<div class="ems-test ems-test2"  style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('ems-test2-background')) ?>')">
     <div class="ems-test__container ems-test2__container container">
         <h1 class="wow fadeInLeft">
-            <span class="colored">
-                Получите небольшой подарок,
-            </span>
-            <br>
-            ответив всего на
-            5 вопросов
+            <?php echo get_theme_mod('ems-test2-title') ?>
         </h1>
         <div class="ems-test2__text">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3_xW3k3gfkGRD1TmFHjcuYjivi30AVkHReOXy-C6G3fnfCQ/viewform"
-                target="blank" role="button" class="wow pulse link-button">Получить!</a>
+            <a 
+                href="<?php echo get_theme_mod('ems-test2-button-link') ?>"
+                target="blank" role="button" class="wow pulse link-button">
+                <?php echo get_theme_mod('ems-test2-button') ?>
+            </a>
         </div>
     </div>
 </div>

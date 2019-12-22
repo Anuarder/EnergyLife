@@ -26,3 +26,5 @@ function scripts_theme() {
 include(get_template_directory() . '/customize/custom_ems_about.php');
 include(get_template_directory() . '/customize/custom_ems_contacts.php');
 include(get_template_directory() . '/customize/custom_ems_footer.php');
+include(get_template_directory() . '/customize/custom_ems_test.php');
+include(get_template_directory() . '/customize/custom_ems_test2.php');

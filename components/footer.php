@@ -1,3 +1,5 @@
+<?php if(get_theme_mod('ems-footer-display') == 'YES') {?>
+
 <footer class="footer">
     <div class="wow fadeIn footer__container container">
         <div class="footer__logo">
@@ -25,3 +27,6 @@
         </div>
     </div>
 </footer>
+
+
+<?php }?>
