@@ -1,45 +1,48 @@
+<?php if(get_theme_mod('ems-result-counter-display') == 'YES') {?>
+
 <div class="result-counter" id="about">
     <div class="result-counter__container container">
         <div class="wow fadeInUp result-counter-item" data-wow-delay=".2s">
             <h1>
-                0.<span class="count">28</span>%
+                <?php echo get_theme_mod('ems-result-counter-item1') ?>
             </h1>
             <h2>
-                Столько процентов Вашего времени в месяц требуется на занятие
+                <?php echo get_theme_mod('ems-result-counter-item1-text') ?>
             </h2>
         </div>
         <div class="wow fadeInUp result-counter-item" data-wow-delay=".2s">
             <h1>
-                <span class="count">64</span> 000 тг
+                <?php echo get_theme_mod('ems-result-counter-item2') ?>
             </h1>
             <h2>
-                Вы экономите при покупке годового абонемента
+                <?php echo get_theme_mod('ems-result-counter-item2-text') ?>
             </h2>
         </div>
         <div class="wow fadeInUp result-counter-item" data-wow-delay=".4s">
             <h1>
-                <span class="count">30</span>
-                <span class="count">700</span>
+                <?php echo get_theme_mod('ems-result-counter-item3') ?>
             </h1>
             <h2>
-                Проведено персональных тренировок
+                <?php echo get_theme_mod('ems-result-counter-item3-text') ?>
             </h2>
         </div>
         <div class="wow fadeInUp result-counter-item" data-wow-delay=".6s">
             <h1>
-                <span class="count">-8</span> кг
+                <?php echo get_theme_mod('ems-result-counter-item4') ?>
             </h1>
             <h2>
-                Лучший результат за месяц
+                <?php echo get_theme_mod('ems-result-counter-item4-text') ?>
             </h2>
         </div>
         <div class="wow fadeInUp result-counter-item" data-wow-delay=".8s">
             <h1>
-                <span class="count">100</span>%
+                <?php echo get_theme_mod('ems-result-counter-item5') ?>
             </h1>
             <h2>
-                Результат при выполнении рекомендации тренера
+                <?php echo get_theme_mod('ems-result-counter-item5-text') ?>
             </h2>
         </div>
     </div>
 </div>
+
+<?php }?>

@@ -21,8 +21,8 @@
             </a>
         </div>
         <div class="footer__button">
-            <a href="tel:+7 (775) 232 44 88" role="button">
-                Позвонить
+            <a href="tel:<?php echo get_theme_mod('ems-footer-phone') ?>" role="button">
+                <?php echo get_theme_mod('ems-footer-phone-headline') ?>
             </a>
         </div>
     </div>

@@ -1,3 +1,5 @@
+<?php if(get_theme_mod('ems-test1-display') == 'YES') {?>
+
 <div class="ems-test" style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('ems-test-background')) ?>')">
     <div class="ems-test__container container">
         <h1 class="wow fadeInLeft">
@@ -16,3 +18,5 @@
         </div>
     </div>
 </div>
+
+<?php }?>

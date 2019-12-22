@@ -1,4 +1,8 @@
-<div class="ems-test ems-test2"  style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('ems-test2-background')) ?>')">
+<?php if(get_theme_mod('ems-test2-display') == 'YES') {?>
+
+<div 
+    class="ems-test ems-test2"  
+    style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('ems-test2-background')) ?>')">
     <div class="ems-test__container ems-test2__container container">
         <h1 class="wow fadeInLeft">
             <?php echo get_theme_mod('ems-test2-title') ?>
@@ -12,3 +16,5 @@
         </div>
     </div>
 </div>
+
+<?php }?>
