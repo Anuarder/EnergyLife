@@ -9,6 +9,10 @@
   font-size: 1.1rem;
 }
 
+.navigation__logo {
+  max-width: 220px;
+}
+
 .navigation a:hover {
   text-decoration: underline;
 }
