@@ -1,3 +1,5 @@
+<?php if(get_theme_mod('ems-contacts-display') == 'YES') {?>
+
 <div class="ems-contacts" id="contacts">
     <div id="mymap"></div>
     <div class="mymap-container">
@@ -5,24 +7,28 @@
             <div class="ems-contacts__content">
                 <div class="flexible">
                     <div>
-                        <h1>Контакты:</h1>
-                        <h2 class="colored">Адрес:</h2>
+                        <h1> <?php echo get_theme_mod('ems-contacts-headline') ?> </h1>
+                        <h2 class="colored"> <?php echo get_theme_mod('ems-contacts-address') ?> </h2>
                         <p>
-                            Достык 97, ЖК Самал Де Люкс
+                            <?php echo get_theme_mod('ems-contacts-address-item1') ?>
                         </p>
-                        <a href="https://yandex.kz/maps/-/CGT3aSjv" target="blank">Показать на карте</a>
+                        <a href="<?php echo get_theme_mod('ems-contacts-address-item1-link') ?>" target="blank">
+                            <?php echo get_theme_mod('ems-contacts-address-item1-button') ?>
+                        </a>
                         <p>
-                            Жамакаева, 254/2 блок Д2
+                            <?php echo get_theme_mod('ems-contacts-address-item2') ?>
                         </p>
-                        <a href="https://yandex.kz/maps/-/CGT3aLKS" target="blank">Показать на карте</a>
+                        <a href="<?php echo get_theme_mod('ems-contacts-address-item2-link') ?>" target="blank">
+                            <?php echo get_theme_mod('ems-contacts-address-item2-button') ?>
+                        </a>
                     </div>
                     <div class="flexible-image flexible-slider swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="<?php bloginfo('template_directory') ?>/images/franchise/f2.png" alt="slide1">
+                                <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-contacts-image1')) ?>" alt="slide1">
                             </div>
                             <div class="swiper-slide">
-                                <img src="<?php bloginfo('template_directory') ?>/images/franchise/f4.jpg" alt="slide2">
+                                <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-contacts-image2')) ?>" alt="slide2">
                             </div>
                         </div>
                         <div class="swiper-pagination9"></div>
@@ -30,15 +36,25 @@
                 </div>
                 <div class="ems-contacts__items">
                     <div class="ems-contacts__item">
-                        <h2 class="colored">Телефон:</h2>
-                        <a href="tel:+7 (775) 232 44 88">+7 (775) 232 44 88</a>
+                        <h2 class="colored">
+                            <?php echo get_theme_mod('ems-contacts-phone-headline') ?>
+                        </h2>
+                        <a href="tel:<?php echo get_theme_mod('ems-contacts-phone') ?>">
+                            <?php echo get_theme_mod('ems-contacts-phone') ?>
+                        </a>
                     </div>
                     <div class="ems-contacts__item">
-                        <h2 class="colored">Почта:</h2>
-                        <a href="mailto:energy.life.forever@gmail.com">energy.life.forever@gmail.com</a>
+                        <h2 class="colored">
+                            <?php echo get_theme_mod('ems-contacts-email-headline') ?>
+                        </h2>
+                        <a href="mailto:<?php echo get_theme_mod('ems-contacts-email') ?>">
+                            <?php echo get_theme_mod('ems-contacts-email') ?>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<?php }?>
