@@ -8,7 +8,7 @@
         </h1>
         <div class="ems-food__content">
             <div class="wow bounceIn ems-food__image">
-                <img src=" <?php echo wp_get_attachment_url(get_theme_mod('ems-food-image')) ?>" alt="iamge">
+                <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-food-image')) ?>" alt="iamge">
             </div>
             <div class="ems-food__text">
                 <h1 class="wow fadeInUp colored" data-wow-delay=".2s">

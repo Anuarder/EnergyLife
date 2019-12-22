@@ -36,3 +36,5 @@ include(get_template_directory() . '/customize/custom_ems_shapes.php');
 include(get_template_directory() . '/customize/custom_ems_food.php');
 include(get_template_directory() . '/customize/custom_ems_questions.php');
 include(get_template_directory() . '/customize/custom_ems_franchise.php');
+include(get_template_directory() . '/customize/custom_ems_navigation.php');
+include(get_template_directory() . '/customize/custom_ems_header.php');

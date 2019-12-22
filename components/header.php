@@ -1,36 +1,33 @@
+<?php if(get_theme_mod('ems-header-display') == 'YES') {?>
+
 <div class="header__slider swiper-container" id="home">
     <div class="header__slider-container swiper-wrapper">
         <div class="header__slide swiper-slide"
-            style="background-image: url('<?php bloginfo('template_directory') ?>/images/header/slider1.jpg')">
+            style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('ems-header-image1')) ?>')">
             <div class="wow fadeIn header__slide-content">
                 <div class="header__slide-container container">
                     <div class="header__slide-text">
                         <h1>
-                            ЕMS - тренировки
-                            <br>
-                            <span class="colored">
-                                20 МИНУТ В НЕДЕЛЮ!
-                            </span>
+                            <?php echo get_theme_mod('ems-header-slider1-title') ?>
                         </h1>
                         <h2>
-                            Результат чувствуется после первой тренировки
-                            и становится заметен уже на пятом занятии!
+                            <?php echo get_theme_mod('ems-header-slider1-subtitle') ?>
                         </h2>
                         <div class="header__text">
                             <div class="header__list-title colored">
-                                EMS студии Energy Life – это:
+                                <?php echo get_theme_mod('ems-header-slider1-list-title') ?>
                             </div>
                             <div class="header__list">
-                                - Европейский стандарт технологии тренировок/Германия
+                                <?php echo get_theme_mod('ems-header-slider1-list1') ?>
                             </div>
                             <div class="header__list">
-                                - Персональные занятия с квалифицированным тренером
+                                <?php echo get_theme_mod('ems-header-slider1-list2') ?>
                             </div>
                             <div class="header__list">
-                                - Уникальный сервис - форма и аксессуары предоставляются в студии
+                                <?php echo get_theme_mod('ems-header-slider1-list3') ?>
                             </div>
                             <div class="header__list">
-                                - После каждой тренировки проводится массаж
+                                <?php echo get_theme_mod('ems-header-slider1-list4') ?>
                             </div>
                         </div>
                     </div>
@@ -38,25 +35,25 @@
             </div>
         </div>
         <div class="header__slide swiper-slide"
-            style="background-image: url('<?php bloginfo('template_directory') ?>/images/header/slider2.jpg')">
+            style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('ems-header-image2')) ?>')">
             <div class="wow fadeIn header__slide-content">
                 <div class="header__slide-container container">
                     <div class="header__slide-text">
                         <h1>
-                            РАССРОЧКА
+                            <?php echo get_theme_mod('ems-header-slider2-title') ?>
                         </h1>
                         <h2>
-                            На абонементы 3, 6 и 12 месяцев
+                            <?php echo get_theme_mod('ems-header-slider2-subtitle') ?>
                         </h2>
                         <div class="header__text">
                             <div class="header__list-title colored">
-                                Занимайся больше, плати меньше!
+                                <?php echo get_theme_mod('ems-header-slider2-list-title') ?>
                             </div>
                             <div class="header__list">
-                                - без %
+                                <?php echo get_theme_mod('ems-header-slider2-list1') ?>
                             </div>
                             <div class="header__list">
-                                - без переплат
+                                <?php echo get_theme_mod('ems-header-slider2-list2') ?>
                             </div>
                         </div>
                     </div>
@@ -118,3 +115,5 @@
         </form>
     </div>
 </div>
+
+<?php }?>
