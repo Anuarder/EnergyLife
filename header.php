@@ -11,7 +11,7 @@
     <style>
         @media (max-width: 1100px) {
             .ems-plus__content {
-                background-image: url('<?php bloginfo('template_directory') ?>/images/plus/girl_opacity.png');
+                background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('ems-plus-girl-opacity')) ?>');
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;

@@ -1,14 +1,16 @@
+<?php if(get_theme_mod('ems-plus-display') == 'YES') {?>
+
 <div class="ems-plus">
     <div class="ems-plus__container container">
         <div class="ems-plus__girl"
-            style="background-image: url('<?php bloginfo('template_directory') ?>/images/plus/girl.png')">
+            style="background-image: url('<?php echo wp_get_attachment_url(get_theme_mod('ems-plus-girl')) ?>">
             <div class="wow fadeIn ems-plus__girl-content ems-plus__girl-content1">
                 <button @click="showGirlText(1)">
                     <span v-if="girl_button === 1">-</span>
                     <span v-else>+</span>
                 </button>
                 <div v-show="girl_button === 1" class="ems-plus__girl-text">
-                    Тонус и рельеф мышц
+                    <?php echo get_theme_mod('ems-plus-item1') ?>
                 </div>
             </div>
             <div class="wow fadeIn ems-plus__girl-content ems-plus__girl-content2">
@@ -17,7 +19,7 @@
                     <span v-else>+</span>
                 </button>
                 <div v-show="girl_button === 2" class="ems-plus__girl-text">
-                    Антивозрастной эффект
+                    <?php echo get_theme_mod('ems-plus-item2') ?>
                 </div>
             </div>
             <div class="wow fadeIn ems-plus__girl-content ems-plus__girl-content3">
@@ -26,7 +28,7 @@
                     <span v-else>+</span>
                 </button>
                 <div v-show="girl_button === 3" class="ems-plus__girl-text">
-                    Уменьшение целлюлита
+                    <?php echo get_theme_mod('ems-plus-item3') ?>
                 </div>
             </div>
             <div class="wow fadeIn ems-plus__girl-content ems-plus__girl-content4">
@@ -35,7 +37,7 @@
                     <span v-else>+</span>
                 </button>
                 <div v-show="girl_button === 4" class="ems-plus__girl-text">
-                    Уменьшение боли в спине
+                    <?php echo get_theme_mod('ems-plus-item4') ?>
                 </div>
             </div>
             <div class="wow fadeIn ems-plus__girl-content ems-plus__girl-content5">
@@ -44,7 +46,7 @@
                     <span v-else>+</span>
                 </button>
                 <div v-show="girl_button === 5" class="ems-plus__girl-text">
-                    Жиросжигание
+                    <?php echo get_theme_mod('ems-plus-item5') ?>
                 </div>
             </div>
             <div class="wow fadeIn ems-plus__girl-content ems-plus__girl-content6">
@@ -53,49 +55,45 @@
                     <span v-else>+</span>
                 </button>
                 <div v-show="girl_button === 6" class="ems-plus__girl-text">
-                    Укрепление поясничного отдела
+                    <?php echo get_theme_mod('ems-plus-item6') ?>
                 </div>
             </div>
         </div>
         <div class="ems-plus__content">
             <h1 class="wow fadeInRight">
-                <span class="colored">Плюсы</span> наших тренировок
+                <?php echo get_theme_mod('ems-plus-title') ?>
             </h1>
             <div class="ems-plus__list">
                 <div class="wow fadeInUp ems-plus__list-item" data-wow-delay=".2s">
-                    <img src="<?php bloginfo('template_directory') ?>/images/plus/list1.svg" alt="list1">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-plus-text1-image')) ?>" alt="list1">
                     <p>
-                        Предлагаем <b>лучшее соотношение</b> стоимости
-                        абонементов, <b>результата и персонализации</b> на рынке
-                        EMS в РК
+                        <?php echo get_theme_mod('ems-plus-text1') ?>
                     </p>
                 </div>
                 <div class="wow fadeInUp ems-plus__list-item" data-wow-delay=".4s">
-                    <img src="<?php bloginfo('template_directory') ?>/images/plus/list2.svg" alt="list1">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-plus-text2-image')) ?>" alt="list2">
                     <p>
-                        Проводим <b>ежегодное обучение</b> ТОП-менеджмента и
-                        тренерского состава Energy Life в Германии
+                        <?php echo get_theme_mod('ems-plus-text2') ?>
                     </p>
                 </div>
                 <div class="wow fadeInUp ems-plus__list-item" data-wow-delay=".6s">
-                    <img src="<?php bloginfo('template_directory') ?>/images/plus/list3.svg" alt="list1">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-plus-text3-image')) ?>" alt="list3">
                     <p>
-                        Мы работаем на оборудовании от мирового лидера
-                        рынка EMS - <b>MIHA BODYTECH (Германия)</b>
+                        <?php echo get_theme_mod('ems-plus-text3') ?>
                     </p>
                 </div>
                 <div class="wow fadeInUp ems-plus__list-item" data-wow-delay=".8s">
-                    <img src="<?php bloginfo('template_directory') ?>/images/plus/list4.svg" alt="list1">
+                    <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-plus-text4-image')) ?>" alt="list4">
                     <p>
-                        Energy Life - <b>единственная сеть EMS</b> - студий в РК
-                        обладающая сертификатов <b> международного образца </b>,
-                        выданного в Германии разработчиками технологии и оборудования
+                        <?php echo get_theme_mod('ems-plus-text4') ?>
                     </p>
                 </div>
             </div>
             <a href="#home" role="button" class="wow pulse link-button anchor" data-wow-delay="1s">
-                Заказать звонок
+                <?php echo get_theme_mod('ems-plus-button') ?>
             </a>
         </div>
     </div>
 </div>
+
+<?php }?>
