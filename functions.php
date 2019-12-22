@@ -34,3 +34,5 @@ include(get_template_directory() . '/customize/custom_ems_reviews.php');
 include(get_template_directory() . '/customize/custom_ems_types.php');
 include(get_template_directory() . '/customize/custom_ems_shapes.php');
 include(get_template_directory() . '/customize/custom_ems_food.php');
+include(get_template_directory() . '/customize/custom_ems_questions.php');
+include(get_template_directory() . '/customize/custom_ems_franchise.php');

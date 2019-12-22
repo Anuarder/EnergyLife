@@ -1,24 +1,27 @@
+<?php if(get_theme_mod('ems-franchise-display') == 'YES') {?>
+
 <div class="ems-franchise" id="franchise">
     <div class="ems-franchise__container container">
         <h1 class="wow fadeInLeft">
-            Инновационный смарт-бизнес <br>
-            в формате франшизы с доходом <br>
-            <span class="colored">от 3 000 000 тг.</span> в месяц
+            <?php echo get_theme_mod('ems-franchise-title') ?>
         </h1>
         <h2 class="wow fadeInRight">
-            Мы осуществляем поддержку на всех этапах открытия Вашей студии!
+            <?php echo get_theme_mod('ems-franchise-subtitle') ?>
         </h2>
         <div class="ems-franchise__content">
             <div class="wow pulse ems-franchise__slider swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="<?php bloginfo('template_directory') ?>/images/franchise/f1.png" alt="slide1">
+                        <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-franchise-image1')) ?>"
+                            alt="slide1">
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?php bloginfo('template_directory') ?>/images/franchise/f2.png" alt="slide2">
+                        <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-franchise-image2')) ?>"
+                            alt="slide2">
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?php bloginfo('template_directory') ?>/images/franchise/f3.png" alt="slide3">
+                        <img src="<?php echo wp_get_attachment_url(get_theme_mod('ems-franchise-image3')) ?>"
+                            alt="slide3">
                     </div>
                 </div>
                 <div class="ems-franchise__actions">
@@ -31,23 +34,32 @@
                     </div>
                 </div>
                 <div class="link-video-container">
-                    <a class="link-video"
-                        href="https://www.youtube.com/playlist?list=PLrqF-Tbp98X37Qhj8xcjnYWwB5WRXVkqL" target="blank">
-                        Посмотреть видео.
+                    <a class="link-video" href="<?php echo get_theme_mod('ems-franchise-video-link') ?>" target="blank">
+                        <?php echo get_theme_mod('ems-franchise-video') ?>
                     </a>
                 </div>
             </div>
             <div class="wow flipInX ems-franchise__text">
-                <h1 class="colored">От 40 м2</h1>
-                <h2>Необходимо для открытия студии</h2>
-                <h1 class="colored">От 2-3 месяцев</h1>
-                <h2>Выход на окупаемость бизнеса</h2>
-                <h1 class="colored">0%</h1>
+                <h1 class="colored">
+                    <?php echo get_theme_mod('ems-franchise-text1') ?>
+                </h1>
                 <h2>
-                    Роялти отсутствует
+                    <?php echo get_theme_mod('ems-franchise-text1-sub') ?>
+                </h2>
+                <h1 class="colored">
+                    <?php echo get_theme_mod('ems-franchise-text2') ?>
+                </h1>
+                <h2>
+                    <?php echo get_theme_mod('ems-franchise-text2-sub') ?>
+                </h2>
+                <h1 class="colored">
+                    <?php echo get_theme_mod('ems-franchise-text3') ?>
+                </h1>
+                <h2>
+                    <?php echo get_theme_mod('ems-franchise-text3-sub') ?>
                 </h2>
                 <a role="button" class="link-button franchise-btn">
-                    Заказать консультацию
+                    <?php echo get_theme_mod('ems-franchise-button')?>
                 </a>
             </div>
         </div>
@@ -76,3 +88,5 @@
         </div>
     </div>
 </div>
+
+<?php }?>
