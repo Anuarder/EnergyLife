@@ -10,11 +10,10 @@
 }
 
 .ems-plus__girl {
-  position: relative;
+  position: relative; 
   width: 55%;
   margin-right: 2rem;
   transform: rotate(10deg);
-  background-image: url('../images/plus/girl.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -181,13 +180,6 @@
   .ems-plus__content a {
     margin: 0 auto;
     margin-top: 3rem;
-  }
-
-  .ems-plus__content {
-    background-image: url('../images/plus/girl_opacity.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 

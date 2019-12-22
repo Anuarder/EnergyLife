@@ -8,5 +8,15 @@
     <link rel="icon" href="<?php bloginfo('template_directory') ?>/images/favicon.png" type="image/png">
     <title>EnergyLife</title>
     <?php wp_head(); ?>
+    <style>
+        @media (max-width: 1100px) {
+            .ems-plus__content {
+                background-image: url('<?php bloginfo('template_directory') ?>/images/plus/girl_opacity.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
 </head>
 <body>

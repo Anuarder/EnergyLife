@@ -262,7 +262,7 @@
         </div>
         <div class="ems-plus">
             <div class="ems-plus__container container">
-                <div class="ems-plus__girl">
+                <div class="ems-plus__girl" style="background-image: url('<?php bloginfo('template_directory') ?>/images/plus/girl.png')">
                     <div class="wow fadeIn ems-plus__girl-content ems-plus__girl-content1">
                         <button @click="showGirlText(1)">
                             <span v-if="girl_button === 1">-</span>
