@@ -31,3 +31,6 @@ include(get_template_directory() . '/customize/custom_ems_test2.php');
 include(get_template_directory() . '/customize/custom_ems_result_counter.php');
 include(get_template_directory() . '/customize/custom_ems_plus.php');
 include(get_template_directory() . '/customize/custom_ems_reviews.php');
+include(get_template_directory() . '/customize/custom_ems_types.php');
+include(get_template_directory() . '/customize/custom_ems_shapes.php');
+include(get_template_directory() . '/customize/custom_ems_food.php');

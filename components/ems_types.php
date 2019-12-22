@@ -1,132 +1,169 @@
+<?php if(get_theme_mod('ems-types-display') == 'YES') {?>
+
 <div class="ems-types" id="types">
     <div class="ems-types__container container">
         <h1 class="wow fadeInLeft">
-            Виды <span class="colored">абонементов</span>
+            <?php echo get_theme_mod('ems-types-title') ?>
         </h1>
         <h2 class="wow fadeInRight">
-            У нас есть тариф подходящий именно для вас! <br>
-            <b>+5 минутный сеанс массажа всего тела на тренажере MIHA BODYTEC в подарок!</b>
+            <?php echo get_theme_mod('ems-types-subtitle') ?>
         </h2>
         <div class="ems-types__content">
             <div class="ems-types__items">
                 <div class="wow fadeInUp ems-types__item" data-wow-delay=".2s">
                     <div class="ems-types__card">
-                        <h1>1 мес.</h1>
-                        <h2>За 1 тренировку/5 500тг</h2>
+                        <h1>
+                            <?php echo get_theme_mod('ems-types-item1-title') ?>
+                        </h1>
+                        <h2>
+                            <?php echo get_theme_mod('ems-types-item1-subtitle') ?>
+                        </h2>
                         <div class="ems-types__list">
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                4 тренировки
+                                <?php echo get_theme_mod('ems-types-item1-list1') ?>
                             </div>
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                Заморозка 8 дней
+                                <?php echo get_theme_mod('ems-types-item1-list2') ?>
                             </div>
                         </div>
                     </div>
                     <button class="ems-types__button types-button">
-                        Приобрести
+                        <?php echo get_theme_mod('ems-types-button') ?>
                     </button>
                 </div>
                 <div class="wow fadeInUp ems-types__item" data-wow-delay=".4s">
                     <div class="ems-types__card">
-                        <h1>INTENSIVE</h1>
-                        <h2>За 1 тренировку/5 000 тг</h2>
+                        <h1>
+                            <?php echo get_theme_mod('ems-types-item2-title') ?>
+                        </h1>
+                        <h2>
+                            <?php echo get_theme_mod('ems-types-item2-subtitle') ?>
+                        </h2>
                         <div class="ems-types__list">
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                8 тренировок
+                                <?php echo get_theme_mod('ems-types-item2-list1') ?>
                             </div>
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                Заморозка 8 дней
+                                <?php echo get_theme_mod('ems-types-item2-list2') ?>
                             </div>
                         </div>
                     </div>
                     <button class="ems-types__button types-button">
-                        Приобрести
+                        <?php echo get_theme_mod('ems-types-button') ?>
                     </button>
                 </div>
                 <div class="wow fadeInUp ems-types__item" data-wow-delay=".6s">
                     <div class="ems-types__card">
-                        <h1>3 мес.</h1>
-                        <h2>За 1 тренировку/5 000тг</h2>
+                        <h1>
+                            <?php echo get_theme_mod('ems-types-item3-title') ?>
+                        </h1>
+                        <h2>
+                            <?php echo get_theme_mod('ems-types-item3-subtitle') ?>
+                        </h2>
                         <div class="ems-types__list">
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                12 тренировок
+                                <?php echo get_theme_mod('ems-types-item3-list1') ?>
                             </div>
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                Заморозка 15 дней
+                                <?php echo get_theme_mod('ems-types-item3-list2') ?>
                             </div>
                         </div>
                     </div>
                     <button class="ems-types__button types-button">
-                        Приобрести
+                        <?php echo get_theme_mod('ems-types-button') ?>
                     </button>
                 </div>
             </div>
             <div class="ems-types__items">
                 <div class="wow fadeInUp ems-types__item" data-wow-delay=".7s">
                     <div class="ems-types__card">
-                        <h1>6 мес.</h1>
-                        <h2>За 1 тренировку/4 500тг</h2>
+                        <h1>
+                            <?php echo get_theme_mod('ems-types-item4-title') ?>
+                        </h1>
+                        <h2>
+                            <?php echo get_theme_mod('ems-types-item4-subtitle') ?>
+                        </h2>
                         <div class="ems-types__list">
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                24 тренировки
+                                <?php echo get_theme_mod('ems-types-item4-list1') ?>
                             </div>
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                Заморозка 20 дней
+                                <?php echo get_theme_mod('ems-types-item4-list2') ?>
                             </div>
                         </div>
                     </div>
                     <button class="ems-types__button types-button">
-                        Приобрести
+                        <?php echo get_theme_mod('ems-types-button') ?>
                     </button>
                 </div>
                 <div class="wow fadeInUp ems-types__item" data-wow-delay=".9s">
                     <div class="ems-types__card">
-                        <h1>12 мес.</h1>
-                        <h2>За 1 тренировку/4 167тг</h2>
+                        <h1>
+                            <?php echo get_theme_mod('ems-types-item5-title') ?>
+                        </h1>
+                        <h2>
+                            <?php echo get_theme_mod('ems-types-item5-subtitle') ?>
+                        </h2>
                         <div class="ems-types__list">
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                48 тренировок
+                                <?php echo get_theme_mod('ems-types-item5-list1') ?>
                             </div>
                             <div class="ems-types__list-item">
                                 <img src="<?php bloginfo('template_directory') ?>/images/types/check.svg" alt="check">
-                                Заморозка 30 дней
+                                <?php echo get_theme_mod('ems-types-item5-list2') ?>
                             </div>
                         </div>
                     </div>
                     <button class="ems-types__button types-button">
-                        Приобрести
+                        <?php echo get_theme_mod('ems-types-button') ?>
                     </button>
                 </div>
                 <div class="wow fadeInUp ems-types__item" data-wow-delay="1s">
                     <div class="ems-types__prices">
                         <div class="ems-types__price">
-                            <span>Пробная тренировка</span>
+                            <span>
+                                <?php echo get_theme_mod('ems-types-price1-text') ?>
+                            </span>
                             <u class="type-dot"></u>
-                            <b>2 000 тг</b>
+                            <b>
+                                <?php echo get_theme_mod('ems-types-price1-price') ?>
+                            </b>
                         </div>
                         <div class="ems-types__price">
-                            <span>Разовое посещение</span>
+                            <span>
+                                <?php echo get_theme_mod('ems-types-price2-text') ?>
+                            </span>
                             <u class="type-dot"></u>
-                            <b>7 000 тг</b>
+                            <b>
+                                <?php echo get_theme_mod('ems-types-price2-price') ?>
+                            </b>
                         </div>
                         <div class="ems-types__price">
-                            <span>Прокат костюма</span>
+                            <span>
+                                <?php echo get_theme_mod('ems-types-price3-text') ?>
+                            </span>
                             <u class="type-dot"></u>
-                            <b>2 000 тг</b>
+                            <b>
+                                <?php echo get_theme_mod('ems-types-price3-price') ?>
+                            </b>
                         </div>
                         <div class="ems-types__price">
-                            <span>Носочки</span>
+                            <span>
+                                <?php echo get_theme_mod('ems-types-price4-text') ?>
+                            </span>
                             <u class="type-dot"></u>
-                            <b>500 тг</b>
+                            <b>
+                                <?php echo get_theme_mod('ems-types-price4-price') ?>
+                            </b>
                         </div>
                     </div>
                 </div>
@@ -157,3 +194,5 @@
         </div>
     </div>
 </div>
+
+<?php }?>

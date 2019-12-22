@@ -130,7 +130,7 @@ function reviews_video($wp_customize) {
         'settings' => 'ems-reviews-video',
     )));
 
-    $wp_customize -> add_setting('ems-reviews-video', array(
+    $wp_customize -> add_setting('ems-reviews-video-link', array(
         'default' => 'https://www.youtube.com/playlist?list=PLrqF-Tbp98X37Qhj8xcjnYWwB5WRXVkqL'
     ));
 

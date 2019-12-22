@@ -1,53 +1,74 @@
+<?php if(get_theme_mod('ems-food-display') == 'YES') {?>
+
+
 <div class="ems-food">
     <div class="ems-food__container container">
-        <h1 class="wow fadeInLeft">О коуче <span class="colored">по питанию</span></h1>
+        <h1 class="wow fadeInLeft">
+            <?php echo get_theme_mod('ems-food-title') ?>
+        </h1>
         <div class="ems-food__content">
             <div class="wow bounceIn ems-food__image">
-                <img src="<?php bloginfo('template_directory') ?>/images/food/image.jpg" alt="iamge">
+                <img src=" <?php echo wp_get_attachment_url(get_theme_mod('ems-food-image')) ?>" alt="iamge">
             </div>
             <div class="ems-food__text">
-                <h1 class="wow fadeInUp colored" data-wow-delay=".2s">Юлия Халикова</h1>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">Сертифицированный тренер по питанию</h2>
+                <h1 class="wow fadeInUp colored" data-wow-delay=".2s">
+                    <?php echo get_theme_mod('ems-food-name') ?>
+                </h1>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    <?php echo get_theme_mod('ems-food-subtitle') ?>
+                </h2>
                 <div class="ems-food__list">
                     <div class="wow fadeInUp  ems-food__list-item" data-wow-delay=".4s">
-                        <b>1.</b>Единственный в РК специалист, сертифицированный коуч PN1 Канадской школы
-                        Precision Nutrition
+                        <?php echo get_theme_mod('ems-food-list1') ?>
                     </div>
                     <div class="wow fadeInUp ems-food__list-item" data-wow-delay=".5s">
-                        <b>2.</b>Сертифицированный Health Coach Института Интегративного питания, Нью Йорк
+                        <?php echo get_theme_mod('ems-food-list2') ?>
                     </div>
                     <div class="wow fadeInUp ems-food__list-item" data-wow-delay=".6s">
-                        <b>3.</b>Для клиентов студии Energy Life действует эксклюзивная скидка на услуги
+                        <?php echo get_theme_mod('ems-food-list3') ?>
                     </div>
                 </div>
                 <div class="ems-food__cards">
                     <div class="wow fadeInLeft ems-food__card-item" data-wow-delay=".7s">
                         <div class="ems-food__card food-card-1">
-                            <h2><s>20 000 ТГ</s></h2>
-                            <h1>10 000 ТГ</h1>
+                            <h2>
+                                <s>
+                                    <?php echo get_theme_mod('ems-food-price1-stripped') ?>
+                                </s>
+                            </h2>
+                            <h1>
+                                <?php echo get_theme_mod('ems-food-price1') ?>
+                            </h1>
                             <hr>
                             <h3>
-                                Индивидуальная <br>
-                                консультация по питанию
+                                <?php echo get_theme_mod('ems-food-price1-text') ?>
                             </h3>
                         </div>
                         <div class="ems-food__card-link">
-                            <a class="food-btn">Приобрести</a>
+                            <a class="food-btn">
+                                <?php echo get_theme_mod('ems-food-button') ?>
+                            </a>
                         </div>
                     </div>
                     <div class="wow fadeInRight ems-food__card-item" data-wow-delay=".8s">
                         <div class="ems-food__card food-card-2">
-                            <h2><s>80 000 ТГ</s></h2>
-                            <h1>60 000 ТГ</h1>
+                            <h2>
+                                <s>
+                                    <?php echo get_theme_mod('ems-food-price2-stripped') ?>
+                                </s>
+                            </h2>
+                            <h1>
+                                <?php echo get_theme_mod('ems-food-price2') ?>
+                            </h1>
                             <hr>
                             <h3>
-                                Индивидуальная
-                                консультация <br>
-                                8 недель сопровождения
+                                <?php echo get_theme_mod('ems-food-price2-text') ?>
                             </h3>
                         </div>
                         <div class="ems-food__card-link">
-                            <a class="food-btn">Приобрести</a>
+                            <a class="food-btn">
+                                <?php echo get_theme_mod('ems-food-button') ?>
+                            </a>
                         </div>
                     </div>
                     <div class="ems-food__dialog dialog">
@@ -80,3 +101,5 @@
         </div>
     </div>
 </div>
+
+<?php }?>
